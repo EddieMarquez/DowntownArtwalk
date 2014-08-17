@@ -1,0 +1,28 @@
+#u234
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	position: relative;
+}
+
+#u206
+{
+	border-style: none;
+	border-color: transparent;
+	background-color: #173F42;
+	opacity: 0.95;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
+	filter: alpha(opacity=95);
+}
+
+#u207_clip,#u219_clip
+{
+	overflow: hidden;
+}
+
+#u207,#u209,#u217,#u215,#u213,#u221,#u219,#u223
+{
+	position: relative;
+}
+

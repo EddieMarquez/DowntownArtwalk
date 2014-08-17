@@ -1,0 +1,19 @@
+#u339
+{
+	-webkit-transform: matrix(0,-1,1,0,0,45);
+	-ms-transform: matrix(0,-1,1,0,0,45);
+	-o-transform: matrix(0,-1,1,0,0,45);
+	transform: matrix(0,-1,1,0,0,45);
+	position: relative;
+}
+
+#u260_clip,#u288_clip,#u315_clip,#u324_clip,#u333_clip
+{
+	overflow: hidden;
+}
+
+#u260,#u262,#u288,#u300,#u306,#u315,#u312,#u318,#u324,#u321,#u327,#u333,#u330,#u336,#u264
+{
+	position: relative;
+}
+
