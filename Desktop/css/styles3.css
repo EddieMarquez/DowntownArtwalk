@@ -40,4 +40,11 @@ div#arrow{
 div img {
 	margin-left: 10px;
 }
+ul	{
+	display: inline-block;
+}
+li img{
+	width: 200px;
+	height: 200px;
 
+}
