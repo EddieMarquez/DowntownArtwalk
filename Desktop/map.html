@@ -1,76 +1,65 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-	<title>Downtown Artwalk</title>
-	<link rel="stylesheet" type="text/css" href="css/styles2.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script src="jquery.big-slide.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/styles-Map.css">
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
 
-	<script>
-    $(document).ready(function() {
-        $('.menu-link').bigSlide();
-    });
-	</script>
+        <script language="javascript" type="text/javascript">
+              function initialize() {
+                var map_canvas = document.getElementById('map_canvas');
+                var map_options = {
+                  center: new google.maps.LatLng(34.0492 , -118.2590),
+                  zoom: 15,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(map_canvas, map_options)
+              }
+              google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+    </head>
+    <body>
 
-	<script language="javascript" type="text/javascript">
-		      function initialize() {
-		        var map_canvas = document.getElementById('map_canvas');
-		        var map_options = {
-		          center: new google.maps.LatLng(34.0492 , -118.2590),
-		          zoom: 15,
-		          mapTypeId: google.maps.MapTypeId.ROADMAP
-		        }
-		        var map = new google.maps.Map(map_canvas, map_options)
-		      }
-		      google.maps.event.addDomListener(window, 'load', initialize);
-		    </script>
-	
-</head>
-<body>
 
-	<header>
-	<div>
-		Downtown Artwalk
-	</div>
-	</header>
+    <header>
+    <div>
+        Downtown Artwalk
+    </div>
+    </header>
 
-<a href="#menu" class="menu-link">&#9776;
-</a>
+    <nav id="menu" class="panel" role="navigation">
+        <ul>
+            <li><a href="map.html"><img src="images/galleries.png"></a></li>
+            <li><a href="map.html"><img src="images/food.png"></a></li>
+            <li><a href="map.html"><img src="images/bars.png"></a></li>
+            <li><a href="map.html"><img src="images/parking.png"></a></li>
+            <li><a href="map.html"><img src="images/metro.png"></a></li>
+            <li><a href="gallery.html"><img src="images/photos.png"></a></li>
+        </ul>
+    </nav>
+        
+    <div class="wrap push">
 
-	<nav id="menu" class="panel" role="navigation">
-	  <ul>
-			<li><a href="map.html"><img src="images/galleries.png"></a></li>
-			<li><a href="map.html"><img src="images/food.png"></a></li>
-			<li><a href="map.html"><img src="images/bars.png"></a></li>
-			<li><a href="map.html"><img src="images/parking.png"></a></li>
-			<li><a href="map.html"><img src="images/metro.png"></a></li>
-			<li><a href="map.html"><img src="images/photos.png"></a></li>	
-		</ul>
-	</nav>	
+        <a href="#menu" class="menu-link">&#9776;</a>
 
-	<div class="content">
-		
-		<div id="darken"></div>
-		<div id="map_canvas"></div>
-	
+        <div id="darken"></div>
+        <div id="map_canvas"></div>
 
-	</div>
 
-	
-	<!--  
-	<script>
-	$(document).ready(function() {
-	  $('#simple-menu').sidr();
-	});
-	</script>
- -->
-	
-		
-	
-	
- <script src="javascripts/sidr/jquery.sidr.min.js"></script>
- <script src="javascripts/jquery.js"></script>
-</body>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+    </body>
 </html>

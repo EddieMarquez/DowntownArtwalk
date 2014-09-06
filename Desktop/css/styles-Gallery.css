@@ -73,3 +73,12 @@ a{ text-decoration:none; }
 	#gallery li.loaded:hover img, #gallery li.loaded:hover{ transform:none; -webkit-transform:none; }
 	.main footer{ margin:10px 0; }
 } 
+
+a.menu-link{
+	font-size: 58px;
+	position: fixed;
+	margin-top: -80px;
+	color: black;
+}
+
+

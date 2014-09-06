@@ -21,6 +21,60 @@ header{
     box-shadow: 5px 5px 20px #6f6f6f;
 }
 
+ 
+@media screen and (max-width: 900px){
+    header {
+        font-size: 56px;
+        height: 80px;
+        position: fixed;
+    }
+    div {
+        margin-top: -5px;
+        padding-bottom: 25px;
+        margin-right: 80px;
+    }
+    header{
+        text-align: right;
+    }
+
+    a.menu-link {
+       
+        z-index: 100;
+        font-size: 12px;
+
+
+    }
+
+}
+@media screen and (max-width: 600px){
+    header {
+        font-size: 32px;
+        height: 60px;
+        width: 110%;
+    }
+    div {
+        margin-top: 0px;
+        margin-right: 100px;
+        padding-bottom: 0px;
+    }
+
+    header{
+        text-align: right;
+    }
+
+    a.menu-link {
+       
+        z-index: 100;
+        font-size: 12px;
+
+
+    }
+
+
+
+
+}
+
 
 
 .panel {
@@ -28,7 +82,7 @@ header{
     left: -10.625em; /*or width of your navigation panel*/
     width: 10.625em; /*should match the above value*/
     z-index: 420;
-
+    background: #101820;
 }
 
 /*  
@@ -51,8 +105,7 @@ body {
     padding: 20px;
 }
 
-.panel {
-    background: #101820;
+  
 }
 
 .panel a {
@@ -85,9 +138,35 @@ li img{
     width: 110px;
 }
 
+@media screen and (max-width: 900px){
+    nav#menu.panel li img {
+        width: 90px;
+        height: 90px;
+        margin-left: 80px;
+    }
+}
+@media screen and (max-width: 600px){
+    li img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
 #map_canvas {
         width: 100%;
         height: 800px;
         background-color: ;
         z-index: 1;
+        margin-top: 25px;
       }
+
+a.menu-link{
+    font-size: 58px;
+    position: fixed;
+    margin-top: -80px;
+    color: black;
+    text-decoration: none;
+}  
+
+
+
