@@ -10,7 +10,7 @@
       'menu': ('#menu'),
       'push': ('.push'),
       'side': 'left',
-      'menuWidth': '15.625em',
+      'menuWidth': '9.625em',
       'speed': '300'
     }, options);
 
@@ -68,6 +68,8 @@
       menuLink.trigger('click.bigSlide');
       e.preventDefault();
     });
+
+
 
     return menu;
 

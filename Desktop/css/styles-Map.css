@@ -4,6 +4,9 @@
 */
 body{
     background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #101820;
+    line-height: 1.5;
 }
 
 header{
@@ -11,15 +14,19 @@ header{
     width: 105%;
     height: 120px;
     margin-bottom:-45px; 
-    position: ;
     margin-top: -10px;
     margin-left: -10px;
-    font-size: 88px;
-    text-align: center;
     font-family: LobsterTwo;
     z-index: 10;
     box-shadow: 5px 5px 20px #6f6f6f;
 }
+ h1{
+        text-align: center;
+        font-size: 88px;
+        margin-top: auto;
+        margin-right: 20px;
+        height: 60px;
+    }
 
  
 @media screen and (max-width: 900px){
@@ -27,23 +34,21 @@ header{
         font-size: 56px;
         height: 80px;
         position: fixed;
+        
     }
     div {
         margin-top: -5px;
         padding-bottom: 25px;
         margin-right: 80px;
     }
-    header{
+    h1{
         text-align: right;
+        font-size: 56px;
+        margin-top: auto;
+        margin-right: 20px;
     }
+   
 
-    a.menu-link {
-       
-        z-index: 100;
-        font-size: 12px;
-
-
-    }
 
 }
 @media screen and (max-width: 600px){
@@ -51,6 +56,7 @@ header{
         font-size: 32px;
         height: 60px;
         width: 110%;
+        
     }
     div {
         margin-top: 0px;
@@ -58,20 +64,14 @@ header{
         padding-bottom: 0px;
     }
 
-    header{
+     h1{
         text-align: right;
-    }
-
-    a.menu-link {
-       
-        z-index: 100;
-        font-size: 12px;
-
+        font-size: 32px;
+        margin-top: 5px;
+        margin-right: -50px;
+        text-align: right;
 
     }
-
-
-
 
 }
 
@@ -89,12 +89,6 @@ header{
     Demo Specific Styles
     ====================
 */
-
-body {
-    font-family: 'Source Sans Pro', sans-serif;
-    color: #101820;
-    line-height: 1.5;
-}
 
 
 
@@ -124,8 +118,9 @@ body {
 
 ul {
    
-    width: 100%;
+    width: 90px;
     height: 100%;
+    margin-left: -20px;
     
 
      
@@ -134,30 +129,31 @@ ul {
 }
 
 li img{
-    height: 110px;
-    width: 110px;
+    height: 92px;
+    width: 92px;
 }
 
 @media screen and (max-width: 900px){
     nav#menu.panel li img {
-        width: 90px;
-        height: 90px;
-        margin-left: 80px;
+        width: 80px;
+        height: 80px;
+        margin: auto;
     }
 }
 @media screen and (max-width: 600px){
-    li img {
+    nav#menu.panel li img {
         width: 60px;
         height: 60px;
     }
 }
 
 #map_canvas {
-        width: 100%;
+        width: 120%;
         height: 800px;
         background-color: ;
         z-index: 1;
         margin-top: 25px;
+        margin-left: -28px;
       }
 
 a.menu-link{
@@ -168,5 +164,27 @@ a.menu-link{
     text-decoration: none;
 }  
 
+@media screen and (max-width: 900px){
 
+    a.menu-link{
+        z-index: 100;
+        font-size: 48px;
+        margin-top: 50px;
+        text-decoration: none;
+        margin-top: -30px;
+
+
+}
+
+@media screen and (max-width: 600px){
+
+    a.menu-link{
+        z-index: 100;
+        font-size: 32px;
+        margin-top: 50px;
+        text-decoration: none;
+        margin-top: -25px;
+
+
+}
 
