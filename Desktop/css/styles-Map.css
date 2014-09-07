@@ -1,0 +1,190 @@
+/*  
+    Recommeded CSS
+    ==============
+*/
+body{
+    background-color: black;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #101820;
+    line-height: 1.5;
+}
+
+header{
+    background-color: yellow;
+    width: 105%;
+    height: 120px;
+    margin-bottom:-45px; 
+    margin-top: -10px;
+    margin-left: -10px;
+    font-family: LobsterTwo;
+    z-index: 10;
+    box-shadow: 5px 5px 20px #6f6f6f;
+}
+ h1{
+        text-align: center;
+        font-size: 88px;
+        margin-top: auto;
+        margin-right: 20px;
+        height: 60px;
+    }
+
+ 
+@media screen and (max-width: 900px){
+    header {
+        font-size: 56px;
+        height: 80px;
+        position: fixed;
+        
+    }
+    div {
+        margin-top: -5px;
+        padding-bottom: 25px;
+        margin-right: 80px;
+    }
+    h1{
+        text-align: right;
+        font-size: 56px;
+        margin-top: auto;
+        margin-right: 20px;
+    }
+   
+
+
+}
+@media screen and (max-width: 600px){
+    header {
+        font-size: 32px;
+        height: 60px;
+        width: 110%;
+        
+    }
+    div {
+        margin-top: 0px;
+        margin-right: 100px;
+        padding-bottom: 0px;
+    }
+
+     h1{
+        text-align: right;
+        font-size: 32px;
+        margin-top: 5px;
+        margin-right: -50px;
+        text-align: right;
+
+    }
+
+}
+
+
+
+.panel {
+    position: fixed;
+    left: -10.625em; /*or width of your navigation panel*/
+    width: 10.625em; /*should match the above value*/
+    z-index: 420;
+    background: #101820;
+}
+
+/*  
+    Demo Specific Styles
+    ====================
+*/
+
+
+
+.wrap {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+  
+}
+
+.panel a {
+    color: #fff;
+}
+
+.menu {
+    width: 20px;
+    height: 20px;
+    z-index: 420;
+    position: fixed;
+}
+
+
+
+
+ul {
+   
+    width: 90px;
+    height: 100%;
+    margin-left: -20px;
+    
+
+     
+ 
+    z-index: 3; 
+}
+
+li img{
+    height: 92px;
+    width: 92px;
+}
+
+@media screen and (max-width: 900px){
+    nav#menu.panel li img {
+        width: 80px;
+        height: 80px;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 600px){
+    nav#menu.panel li img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+#map_canvas {
+        width: 120%;
+        height: 800px;
+        background-color: ;
+        z-index: 1;
+        margin-top: 25px;
+        margin-left: -28px;
+      }
+
+a.menu-link{
+    font-size: 58px;
+    position: fixed;
+    margin-top: -80px;
+    color: black;
+    text-decoration: none;
+}  
+
+@media screen and (max-width: 900px){
+
+    a.menu-link{
+        z-index: 100;
+        font-size: 48px;
+        margin-top: 50px;
+        text-decoration: none;
+        margin-top: -30px;
+
+
+}
+
+@media screen and (max-width: 600px){
+
+    a.menu-link{
+        z-index: 100;
+        font-size: 32px;
+        margin-top: 50px;
+        text-decoration: none;
+        margin-top: -25px;
+
+
+}
+

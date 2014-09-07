@@ -1,14 +1,92 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
+<!--
+/*
+ * Photobox
+ *
+ * Copyright 2012, Yair Even Or
+ * https://dropthebit.com
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+-->
+<html class="no-js" lang="en">
 <head>
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Gallery</title>
-	<link rel="stylesheet" type="text/css" href="css/styles3.css">
+	<meta name="description" content="A lightweight CSS3 image gallery that is pretty to look and and easy to use">
+	<meta name="viewport" content="width=device-width">
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="css/styles-Gallery.css">
+	<link rel="stylesheet" href="css/styles-Map.css.css">
+	<link rel="stylesheet" href="photobox/photobox.css">
+	<!--[if lt IE 9]><link rel="stylesheet" href="photobox/photobox.ie.css"><![endif]-->
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src='photobox/jquery.photobox.js'></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   
 </head>
 <body>
-	<header>
-		<a href="map.html"><div id="arrow"><img src="images/BackArrow.png"></div></a>
-		Downtown Artwalk
-	</header>
 
-</body>
+	<header>
+    <div>
+        <h1>Downtown Artwalk</h1>
+    </div>
+
+    
+    </header>
+
+    <nav id="menu" class="panel" role="navigation">
+        <ul>
+            <li><a href="map.html"><img src="images/galleries.png"></a></li>
+            <li><a href="map.html"><img src="images/food.png"></a></li>
+            <li><a href="map.html"><img src="images/bars.png"></a></li>
+            <li><a href="map.html"><img src="images/parking.png"></a></li>
+            <li><a href="map.html"><img src="images/metro.png"></a></li>
+            <li><a href="gallery.html"><img src="images/photos.png"></a></li>
+        </ul>
+    </nav>
+        
+    <div class="wrap push">
+
+        <a href="#menu" class="menu-link">&#9776;</a>
+
+	<div id='wrap'>
+		<div class='main'>
+
+			
+		<ul id='gallery'>
+			<li class="loaded" ><a href=""><img src="images/08-20-group-show-known-gallery-dscn3553-201-crop-u300.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/03-los-angeles-art-walk_26664_600x450.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/724_laaspicture-crop-u306.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/08-20-group-show-known-gallery-dscn3553-201-crop-u300.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/03-los-angeles-art-walk_26664_600x450.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/724_laaspicture-crop-u306.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/08-20-group-show-known-gallery-dscn3553-201-crop-u300.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/03-los-angeles-art-walk_26664_600x450.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/724_laaspicture-crop-u306.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/08-20-group-show-known-gallery-dscn3553-201-crop-u300.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/03-los-angeles-art-walk_26664_600x450.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/724_laaspicture-crop-u306.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/08-20-group-show-known-gallery-dscn3553-201-crop-u300.jpg" title="Image"></a></li>
+			<li class="loaded"><a href=""><img src="images/03-los-angeles-art-walk_26664_600x450.jpg" title="Image"></a></li>
+		
+		</ul>
+
+	</div>
+
+	<script src='main.js'></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+</body> 
 </html>
