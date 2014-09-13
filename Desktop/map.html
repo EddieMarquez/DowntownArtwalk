@@ -11,9 +11,44 @@
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/styles-Map.css">
         <script src="https://maps.googleapis.com/maps/api/js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    </head>
+    <body>
 
-        <script language="javascript" type="text/javascript">
+
+    <header>
+    <div>
+        <h1>Downtown Artwalk</h1>
+    </div>
+    </header>
+
+    <nav id="menu" class="panel" role="navigation">
+        <ul>
+            <li><a href="map.html"><img src="images/galleries.png"></a></li>
+            <li><a href="map.html"><img src="images/food.png"></a></li>
+            <li><a href="map.html"><img src="images/bars.png"></a></li>
+            <li><a href="map.html"><img src="images/parking.png"></a></li>
+            <li><a href="map.html"><img src="images/metro.png"></a></li>
+            <li><a href="gallery.html"><img src="images/photos.png"></a></li>
+        </ul>
+    </nav>
+        
+    <div class="wrap push">
+
+        <a href="#menu" class="menu-link">&#9776;</a>
+
+        <div id="darken"></div>
+        <div id="map_canvas"></div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bigSlide.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu-link').bigSlide();
+        });
+    </script>
+            <script language="javascript" type="text/javascript">
               function initialize() {
                 var map_canvas = document.getElementById('map_canvas');
                 var map_options = {
@@ -33,7 +68,7 @@
                 zoom: 11,
                 center: new google.maps.LatLng(34.0492, -118.2590)
               }
-              var map = new google.maps.Map(document.getElementById('map-canvas'),
+              var map = new google.maps.Map(document.getElementById('map_canvas'),
                                             mapOptions);
 
               setMarkers(map, beaches);
@@ -78,42 +113,5 @@
 
 
         </script>
-    </head>
-    <body>
-
-
-    <header>
-    <div>
-        <h1>Downtown Artwalk</h1>
-    </div>
-    </header>
-
-    <nav id="menu" class="panel" role="navigation">
-        <ul>
-            <li><a href="map.html"><img src="images/galleries.png"></a></li>
-            <li><a href="map.html"><img src="images/food.png"></a></li>
-            <li><a href="map.html"><img src="images/bars.png"></a></li>
-            <li><a href="map.html"><img src="images/parking.png"></a></li>
-            <li><a href="map.html"><img src="images/metro.png"></a></li>
-            <li><a href="gallery.html"><img src="images/photos.png"></a></li>
-        </ul>
-    </nav>
-        
-    <div class="wrap push">
-
-        <a href="#menu" class="menu-link">&#9776;</a>
-
-        <div id="darken"></div>
-        <div id="map_canvas"></div>
-
-
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="js/bigSlide.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.menu-link').bigSlide();
-        });
-    </script>
     </body>
 </html>
