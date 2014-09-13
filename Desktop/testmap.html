@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>Map</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900' rel='stylesheet' type='text/css'>
@@ -42,29 +42,39 @@
 
 
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/bigSlide.js"></script>
     <script>
- //nav slider   
         $(document).ready(function() {
             $('.menu-link').bigSlide();
         });
     </script>
-      
+            <script language="javascript" type="text/javascript">
+              function initialize() {
+                var map_canvas = document.getElementById('map_canvas');
+                var map_options = {
+                  center: new google.maps.LatLng(34.0492 , -118.2590),
+                  zoom: 15,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                }
+                var map = new google.maps.Map(map_canvas, map_options)
+              }
+              google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
         <script>      
-// Initalize Map
+// Complex Map Flags
+
               function initialize() {
               var mapOptions = {
-                zoom: 15,
+                zoom: 11,
                 center: new google.maps.LatLng(34.0492, -118.2590)
               }
               var map = new google.maps.Map(document.getElementById('map_canvas'),
                                             mapOptions);
 
-              google.maps.event.addDomListener(window, 'load', initialize);
               setMarkers(map, metro, bar, gallery, food, parking);
             }
-//Set Variables and parameters
+
             var metro = [
 			  ['5th / Broadway', 34.0476483,-118.2504055, 1],
 			  ['Maple / 8th', 34.0404474,-118.2502982, 2],
@@ -101,7 +111,6 @@
 			  ['7th Broadway Parking Corporation', 34.0448624,-118.2528605, 4],
 			  ['Central Parking', 34.0479583,-118.2556866, 5]
 			];
-//Name the function with scoped variables			
             function setMarkers(map, metro_new, bar_new, gallery_new, food_new, parking_new) {
 
               var imageParking = {
@@ -139,8 +148,6 @@
                   coords: [1, 1, 1, 20, 18, 20, 18 , 1],
                   type: 'poly'
               };
-//for loop
-//loops the variables with paramaeters             
               for (var i = 0; i < metro_new.length; i++) {
                 var metro = metro_new[i];
                 var myLatLng = new google.maps.LatLng(metro[1], metro[2]);
